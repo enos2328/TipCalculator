@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		356831E123E22A0C00DE2CF0 /* icons8-money-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 356831E023E22A0C00DE2CF0 /* icons8-money-50.png */; };
 		359CAD2123DFB0BA00A98DF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359CAD2023DFB0BA00A98DF5 /* AppDelegate.swift */; };
 		359CAD2323DFB0BA00A98DF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359CAD2223DFB0BA00A98DF5 /* ViewController.swift */; };
 		359CAD2623DFB0BA00A98DF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 359CAD2423DFB0BA00A98DF5 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		356831E023E22A0C00DE2CF0 /* icons8-money-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-money-50.png"; sourceTree = SOURCE_ROOT; };
 		359CAD1D23DFB0BA00A98DF5 /* Tip Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tip Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		359CAD2023DFB0BA00A98DF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		359CAD2223DFB0BA00A98DF5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				359CAD2723DFB0BC00A98DF5 /* Assets.xcassets */,
 				359CAD2923DFB0BC00A98DF5 /* LaunchScreen.storyboard */,
 				359CAD2C23DFB0BC00A98DF5 /* Info.plist */,
+				356831E023E22A0C00DE2CF0 /* icons8-money-50.png */,
 			);
 			path = "Tip Calculator";
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				359CAD2B23DFB0BC00A98DF5 /* LaunchScreen.storyboard in Resources */,
+				356831E123E22A0C00DE2CF0 /* icons8-money-50.png in Resources */,
 				359CAD2823DFB0BC00A98DF5 /* Assets.xcassets in Resources */,
 				359CAD2623DFB0BA00A98DF5 /* Main.storyboard in Resources */,
 			);
