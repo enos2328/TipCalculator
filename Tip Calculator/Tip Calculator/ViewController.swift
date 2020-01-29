@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var billField: UITextField!
     @IBOutlet weak var tipLabel: UITextField!
     @IBOutlet weak var totalLabel: UITextField!
+    @IBOutlet weak var tipControl: UISegmentedControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +29,8 @@ class ViewController: UIViewController {
         let bill = Double(billField.text!) ?? 0 //let is a constant // ?? 0 says that anything that isn't a number gets changed to zero
         
         //CALCULATE THE TIP AND TOTAL
-        let tip = bill * 0.1
+        let tipPercentages = [0.15, 0.18, 0.2]
+        let tip = bill * tipPercentages[tipControl.selectedSegmentIndex]
         let total = bill + tip
         
         //UPDATE THE TIP AND TOTAL LABELS
@@ -36,7 +38,7 @@ class ViewController: UIViewController {
         tipLabel.text = String(format: "$%.2f", tip) // the %f gets replaced by the tip variable, the .2 sets 2 decimal places
         
 //        totalLabel.text = "$\(total)"
-        tipLabel.text = String(format: "$%.2f", total) // the %f gets replaced by the tip variable
+        totalLabel.text = String(format: "$%.2f", total) // the %f gets replaced by the tip variable, the .2 sets 2 decimal places
     }
 }
 
