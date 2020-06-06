@@ -16,7 +16,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        billField.keyboardType = UIKeyboardType.decimalPad
+        tipPercentageField.keyboardType = UIKeyboardType.numberPad
     }
     @IBAction func onTap(_ sender: Any) {
         view.endEditing(true)
