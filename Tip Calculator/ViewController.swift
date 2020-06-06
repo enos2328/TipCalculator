@@ -25,17 +25,31 @@ class ViewController: UIViewController {
     @IBAction func calculateTip(_ sender: Any) {
         //GET BILL AND TIP AMOUNT
         let bill = Double(billField.text!) ?? 0
-        let tipPercentage = tipPercentageField.text as! Int
+        let tipPercentage = Double(tipPercentageField.text!) ?? 0.15
         
         //CALCULATE THE TIP AND TOTAL
         let tip = bill * (tipPercentage * 0.01)
         let total = bill + tip
+        
                 
         //UPDATE THE TIP AND TOTAL LABELS
         tipLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f", total)
     }
     
-    
+    @IBAction func onTapRecalculate(_ sender: Any) {
+        //GET BILL AND TIP AMOUNT
+        let bill = Double(billField.text!) ?? 0
+        let tipPercentage = Double(tipPercentageField.text!) ?? 0.15
+        
+        //CALCULATE THE TIP AND TOTAL
+        let tip = bill * (tipPercentage * 0.01)
+        let total = bill + tip
+        
+                
+        //UPDATE THE TIP AND TOTAL LABELS
+        tipLabel.text = String(format: "$%.2f", tip)
+        totalLabel.text = String(format: "$%.2f", total)
+    }
 }
 
